@@ -1,6 +1,7 @@
 ## 使用Pyarmor对神经网络模型加密
 
 ## 目录
+```
 ├── MindSpore_1.9
 │   ├── dist/
 │   ├── nnPredict_clear.py
@@ -11,6 +12,7 @@
 │   ├── src/
 │   ├── train_clear.py
 │   └── train_enc.py
+├── README.md
 ├── TensorFlow_1.4
 │   ├── dist/
 │   ├── mnist_train.py
@@ -20,4 +22,4 @@
     ├── src/
     ├── tf_train_clear.py
     └── tf_train_enc.py
-
+```
