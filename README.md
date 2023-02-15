@@ -1,5 +1,9 @@
 ## 验证Pyarmor加密的神经网络模型是否能正常训练和推理
-[验证文档](www.zhihu.com)
+
+
+验证Pyarmor加密的神经网络模型是否能正常训练和推理 - 沙子是沙子的文章 - 知乎
+https://zhuanlan.zhihu.com/p/605818200
+
 
 ## 目录
 ```
