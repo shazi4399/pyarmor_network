@@ -1,7 +1,9 @@
-## 使用Pyarmor对神经网络模型加密
+## 验证Pyarmor加密的神经网络模型是否能正常训练和推理
+[验证文档](www.zhihu.com)
 
 ## 目录
 ```
+.
 ├── MindSpore_1.9
 │   ├── dist/
 │   ├── nnPredict_clear.py
@@ -22,4 +24,5 @@
     ├── src/
     ├── tf_train_clear.py
     └── tf_train_enc.py
+
 ```
