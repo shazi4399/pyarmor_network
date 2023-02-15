@@ -1,6 +1,6 @@
 import tensorflow as tf
-from src.nn import MyModel
-#from dist.nn import MyModel
+#from src.nn import MyModel
+from dist.nn import MyModel
 print("TensorFlow version:", tf.__version__)
 
 
