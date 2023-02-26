@@ -1,0 +1,139 @@
+# 1.This file shows the parsed IR info when graph evaluating failed to help find the problem.
+# 2.You can search the last `------------------------>` to the node which is inferred failed.
+# 3.Refer to https://www.mindspore.cn/search?inputValue=analyze_fail.dat to get more instructions.
+# ===============================================================================
+
+subgraph attr:
+subgraph instance: construct.Default_wrapper.1 : 0x11c59920
+# In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:472/    def construct(self, x):/
+subgraph @construct.Default_wrapper.1(%para1_x, %para2_conv1.weight, %para3_end_point.bias, %para4_end_point.weight, %para5_bn1.gamma, %para6_bn1.beta, %para7_bn1.moving_mean, %para8_bn1.moving_variance, %para9_layer4.0.conv2.weight, %para10_layer4.1.conv2.weight, %para11_layer4.2.conv2.weight, %para12_layer4.0.conv3.weight, %para13_layer4.0.conv1.weight, %para14_layer4.1.conv3.weight, %para15_layer4.1.conv1.weight, %para16_layer4.2.conv3.weight, %para17_layer4.2.conv1.weight, %para18_layer3.0.conv2.weight, %para19_layer3.1.conv2.weight, %para20_layer3.2.conv2.weight, %para21_layer3.3.conv2.weight, %para22_layer3.4.conv2.weight, %para23_layer3.5.conv2.weight, %para24_layer3.0.conv3.weight, %para25_layer3.0.conv1.weight, %para26_layer3.1.conv3.weight, %para27_layer3.1.conv1.weight, %para28_layer3.2.conv3.weight, %para29_layer3.2.conv1.weight, %para30_layer3.3.conv3.weight, %para31_layer3.3.conv1.weight, %para32_layer3.4.conv3.weight, %para33_layer3.4.conv1.weight, %para34_layer3.5.conv3.weight, %para35_layer3.5.conv1.weight, %para36_layer2.0.conv2.weight, %para37_layer2.1.conv2.weight, %para38_layer2.2.conv2.weight, %para39_layer2.3.conv2.weight, %para40_layer4.0.bn2.gamma, %para41_layer4.0.bn2.beta, %para42_layer4.0.bn2.moving_mean, %para43_layer4.0.bn2.moving_variance, %para44_layer4.1.bn2.gamma, %para45_layer4.1.bn2.beta, %para46_layer4.1.bn2.moving_mean, %para47_layer4.1.bn2.moving_variance, %para48_layer4.2.bn2.gamma, %para49_layer4.2.bn2.beta, %para50_layer4.2.bn2.moving_mean, %para51_layer4.2.bn2.moving_variance, %para52_layer2.0.conv3.weight, %para53_layer2.0.conv1.weight, %para54_layer2.1.conv3.weight, %para55_layer2.1.conv1.weight, %para56_layer2.2.conv3.weight, %para57_layer2.2.conv1.weight, %para58_layer2.3.conv3.weight, %para59_layer2.3.conv1.weight, %para60_layer1.0.conv2.weight, %para61_layer1.1.conv2.weight, %para62_layer1.2.conv2.weight, %para63_layer4.0.bn3.gamma, %para64_layer4.0.bn3.beta, %para65_layer4.0.bn3.moving_mean, %para66_layer4.0.bn3.moving_variance, %para67_layer4.0.bn1.gamma, %para68_layer4.0.bn1.beta, %para69_layer4.0.bn1.moving_mean, %para70_layer4.0.bn1.moving_variance, %para71_layer4.1.bn3.gamma, %para72_layer4.1.bn3.beta, %para73_layer4.1.bn3.moving_mean, %para74_layer4.1.bn3.moving_variance, %para75_layer4.1.bn1.gamma, %para76_layer4.1.bn1.beta, %para77_layer4.1.bn1.moving_mean, %para78_layer4.1.bn1.moving_variance, %para79_layer4.2.bn3.gamma, %para80_layer4.2.bn3.beta, %para81_layer4.2.bn3.moving_mean, %para82_layer4.2.bn3.moving_variance, %para83_layer4.2.bn1.gamma, %para84_layer4.2.bn1.beta, %para85_layer4.2.bn1.moving_mean, %para86_layer4.2.bn1.moving_variance, %para87_layer3.0.bn2.gamma, %para88_layer3.0.bn2.beta, %para89_layer3.0.bn2.moving_mean, %para90_layer3.0.bn2.moving_variance, %para91_layer3.1.bn2.gamma, %para92_layer3.1.bn2.beta, %para93_layer3.1.bn2.moving_mean, %para94_layer3.1.bn2.moving_variance, %para95_layer3.2.bn2.gamma, %para96_layer3.2.bn2.beta, %para97_layer3.2.bn2.moving_mean, %para98_layer3.2.bn2.moving_variance, %para99_layer3.3.bn2.gamma, %para100_layer3.3.bn2.beta, %para101_layer3.3.bn2.moving_mean, %para102_layer3.3.bn2.moving_variance, %para103_layer3.4.bn2.gamma, %para104_layer3.4.bn2.beta, %para105_layer3.4.bn2.moving_mean, %para106_layer3.4.bn2.moving_variance, %para107_layer3.5.bn2.gamma, %para108_layer3.5.bn2.beta, %para109_layer3.5.bn2.moving_mean, %para110_layer3.5.bn2.moving_variance, %para111_layer1.0.conv3.weight, %para112_layer1.0.conv1.weight, %para113_layer1.1.conv3.weight, %para114_layer1.1.conv1.weight, %para115_layer1.2.conv3.weight, %para116_layer1.2.conv1.weight, %para117_layer3.0.bn3.gamma, %para118_layer3.0.bn3.beta, %para119_layer3.0.bn3.moving_mean, %para120_layer3.0.bn3.moving_variance, %para121_layer3.0.bn1.gamma, %para122_layer3.0.bn1.beta, %para123_layer3.0.bn1.moving_mean, %para124_layer3.0.bn1.moving_variance, %para125_layer3.1.bn3.gamma, %para126_layer3.1.bn3.beta, %para127_layer3.1.bn3.moving_mean, %para128_layer3.1.bn3.moving_variance, %para129_layer3.1.bn1.gamma, %para130_layer3.1.bn1.beta, %para131_layer3.1.bn1.moving_mean, %para132_layer3.1.bn1.moving_variance, %para133_layer3.2.bn3.gamma, %para134_layer3.2.bn3.beta, %para135_layer3.2.bn3.moving_mean, %para136_layer3.2.bn3.moving_variance, %para137_layer3.2.bn1.gamma, %para138_layer3.2.bn1.beta, %para139_layer3.2.bn1.moving_mean, %para140_layer3.2.bn1.moving_variance, %para141_layer3.3.bn3.gamma, %para142_layer3.3.bn3.beta, %para143_layer3.3.bn3.moving_mean, %para144_layer3.3.bn3.moving_variance, %para145_layer3.3.bn1.gamma, %para146_layer3.3.bn1.beta, %para147_layer3.3.bn1.moving_mean, %para148_layer3.3.bn1.moving_variance, %para149_layer3.4.bn3.gamma, %para150_layer3.4.bn3.beta, %para151_layer3.4.bn3.moving_mean, %para152_layer3.4.bn3.moving_variance, %para153_layer3.4.bn1.gamma, %para154_layer3.4.bn1.beta, %para155_layer3.4.bn1.moving_mean, %para156_layer3.4.bn1.moving_variance, %para157_layer3.5.bn3.gamma, %para158_layer3.5.bn3.beta, %para159_layer3.5.bn3.moving_mean, %para160_layer3.5.bn3.moving_variance, %para161_layer3.5.bn1.gamma, %para162_layer3.5.bn1.beta, %para163_layer3.5.bn1.moving_mean, %para164_layer3.5.bn1.moving_variance, %para165_layer2.0.bn2.gamma, %para166_layer2.0.bn2.beta, %para167_layer2.0.bn2.moving_mean, %para168_layer2.0.bn2.moving_variance, %para169_layer2.1.bn2.gamma, %para170_layer2.1.bn2.beta, %para171_layer2.1.bn2.moving_mean, %para172_layer2.1.bn2.moving_variance, %para173_layer2.2.bn2.gamma, %para174_layer2.2.bn2.beta, %para175_layer2.2.bn2.moving_mean, %para176_layer2.2.bn2.moving_variance, %para177_layer2.3.bn2.gamma, %para178_layer2.3.bn2.beta, %para179_layer2.3.bn2.moving_mean, %para180_layer2.3.bn2.moving_variance, %para181_layer2.0.bn3.gamma, %para182_layer2.0.bn3.beta, %para183_layer2.0.bn3.moving_mean, %para184_layer2.0.bn3.moving_variance, %para185_layer2.0.bn1.gamma, %para186_layer2.0.bn1.beta, %para187_layer2.0.bn1.moving_mean, %para188_layer2.0.bn1.moving_variance, %para189_layer2.1.bn3.gamma, %para190_layer2.1.bn3.beta, %para191_layer2.1.bn3.moving_mean, %para192_layer2.1.bn3.moving_variance, %para193_layer2.1.bn1.gamma, %para194_layer2.1.bn1.beta, %para195_layer2.1.bn1.moving_mean, %para196_layer2.1.bn1.moving_variance, %para197_layer2.2.bn3.gamma, %para198_layer2.2.bn3.beta, %para199_layer2.2.bn3.moving_mean, %para200_layer2.2.bn3.moving_variance, %para201_layer2.2.bn1.gamma, %para202_layer2.2.bn1.beta, %para203_layer2.2.bn1.moving_mean, %para204_layer2.2.bn1.moving_variance, %para205_layer2.3.bn3.gamma, %para206_layer2.3.bn3.beta, %para207_layer2.3.bn3.moving_mean, %para208_layer2.3.bn3.moving_variance, %para209_layer2.3.bn1.gamma, %para210_layer2.3.bn1.beta, %para211_layer2.3.bn1.moving_mean, %para212_layer2.3.bn1.moving_variance, %para213_layer1.0.bn2.gamma, %para214_layer1.0.bn2.beta, %para215_layer1.0.bn2.moving_mean, %para216_layer1.0.bn2.moving_variance, %para217_layer1.1.bn2.gamma, %para218_layer1.1.bn2.beta, %para219_layer1.1.bn2.moving_mean, %para220_layer1.1.bn2.moving_variance, %para221_layer1.2.bn2.gamma, %para222_layer1.2.bn2.beta, %para223_layer1.2.bn2.moving_mean, %para224_layer1.2.bn2.moving_variance, %para225_layer1.0.bn3.gamma, %para226_layer1.0.bn3.beta, %para227_layer1.0.bn3.moving_mean, %para228_layer1.0.bn3.moving_variance, %para229_layer1.0.bn1.gamma, %para230_layer1.0.bn1.beta, %para231_layer1.0.bn1.moving_mean, %para232_layer1.0.bn1.moving_variance, %para233_layer1.1.bn3.gamma, %para234_layer1.1.bn3.beta, %para235_layer1.1.bn3.moving_mean, %para236_layer1.1.bn3.moving_variance, %para237_layer1.1.bn1.gamma, %para238_layer1.1.bn1.beta, %para239_layer1.1.bn1.moving_mean, %para240_layer1.1.bn1.moving_variance, %para241_layer1.2.bn3.gamma, %para242_layer1.2.bn3.beta, %para243_layer1.2.bn3.moving_mean, %para244_layer1.2.bn3.moving_variance, %para245_layer1.2.bn1.gamma, %para246_layer1.2.bn1.beta, %para247_layer1.2.bn1.moving_mean, %para248_layer1.2.bn1.moving_variance, %para249_layer4.0.down_sample_layer.0.weight, %para250_layer3.0.down_sample_layer.0.weight, %para251_layer2.0.down_sample_layer.0.weight, %para252_layer1.0.down_sample_layer.0.weight, %para253_layer4.0.down_sample_layer.1.gamma, %para254_layer4.0.down_sample_layer.1.beta, %para255_layer4.0.down_sample_layer.1.moving_mean, %para256_layer4.0.down_sample_layer.1.moving_variance, %para257_layer3.0.down_sample_layer.1.gamma, %para258_layer3.0.down_sample_layer.1.beta, %para259_layer3.0.down_sample_layer.1.moving_mean, %para260_layer3.0.down_sample_layer.1.moving_variance, %para261_layer2.0.down_sample_layer.1.gamma, %para262_layer2.0.down_sample_layer.1.beta, %para263_layer2.0.down_sample_layer.1.moving_mean, %para264_layer2.0.down_sample_layer.1.moving_variance, %para265_layer1.0.down_sample_layer.1.gamma, %para266_layer1.0.down_sample_layer.1.beta, %para267_layer1.0.down_sample_layer.1.moving_mean, %para268_layer1.0.down_sample_layer.1.moving_variance) {
+
+#------------------------> 0
+  %1([CNode]6) = call @construct.Default.2(%para1_x)
+      :(<Tensor[Float32], (1, 28, 28)>) -> (<null>)
+      #scope: (Default)
+  Primitive::Return{prim_type=1}(%1)
+      :(<null>)
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:473/        if self.use_se:/
+}
+# order:
+#   1: @construct.Default_wrapper.1:[CNode]6{[0]: ValueNode<FuncGraph> construct.Default.2, [1]: x}
+#   2: @construct.Default_wrapper.1:[CNode]7{[0]: ValueNode<Primitive> Return, [1]: [CNode]6}
+
+
+subgraph attr:
+subgraph instance: construct.Default.2 : 0x11c37c20
+# In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:472/    def construct(self, x):/
+subgraph @construct.Default.2 parent: [subgraph @construct.Default_wrapper.1](%para269_x) {
+  %1([CNode]9) = call @bool_.8(Bool(0))
+      :(<Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:473/        if self.use_se:/
+  %2([CNode]10) = Primitive::Switch{prim_type=1}(%1, call @✓construct.Default.11, call @✗construct.Default.3)
+      :(<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:473/        if self.use_se:/
+
+#------------------------> 1
+  %3([CNode]12) = %2()
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:473/        if self.use_se:/
+  %4([CNode]14) = call @↓construct.Default.13(%3)
+      :(<null>) -> (<null>)
+      #scope: (Default)
+  Primitive::Return{prim_type=1}(%4)
+      :(<null>)
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:473/        if self.use_se:/
+}
+# order:
+#   1: @construct.Default.2:[CNode]9{[0]: ValueNode<FuncGraph> bool_.8, [1]: ValueNode<BoolImm> false}
+#   2: @construct.Default.2:[CNode]15{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:src.resnet..<ResNet::140420640663648>', [2]: ValueNode<Symbol> conv1_0}
+#   3: @construct.Default.2:[CNode]16{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:src.resnet..<ResNet::140420640663648>', [2]: ValueNode<Symbol> bn1_0}
+#   4: @construct.Default.2:[CNode]17{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:src.resnet..<ResNet::140420640663648>', [2]: ValueNode<Symbol> conv1_1}
+#   5: @construct.Default.2:[CNode]18{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:src.resnet..<ResNet::140420640663648>', [2]: ValueNode<Symbol> bn1_1}
+#   6: @construct.Default.2:[CNode]19{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:src.resnet..<ResNet::140420640663648>', [2]: ValueNode<Symbol> conv1_2}
+#   7: @construct.Default.2:[CNode]10{[0]: ValueNode<Primitive> Switch, [1]: [CNode]9, [2]: ValueNode<FuncGraph> ✓construct.Default.11, [3]: ValueNode<FuncGraph> ✗construct.Default.3}
+#   8: @construct.Default.2:[CNode]12{[0]: [CNode]10}
+#   9: @construct.Default.2:[CNode]14{[0]: ValueNode<FuncGraph> ↓construct.Default.13, [1]: [CNode]12}
+#  10: @construct.Default.2:[CNode]20{[0]: ValueNode<Primitive> Return, [1]: [CNode]14}
+#  11: @construct.Default.2:фself.pad{[0]: ValueNode<Primitive> resolve, [1]: ValueNode<NameSpace> ClassMember: 'Namespace:src.resnet..<ResNet::140420640663648>', [2]: ValueNode<Symbol> pad}
+
+
+subgraph attr:
+subgraph instance: ✗construct.Default.3 : 0x11c3e6a0
+# In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:473/        if self.use_se:/
+subgraph @✗construct.Default.3 parent: [subgraph @construct.Default.2]() {
+
+#------------------------> 2
+  %1(x) = call @construct.Conv2d.4(%para269_x)
+      :(<Tensor[Float32], (1, 28, 28)>) -> (<null>)
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:482/            x = self.conv1(x)/
+  Primitive::Return{prim_type=1}(%1)
+      :(<null>)
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:473/        if self.use_se:/
+}
+# order:
+#   1: @✗construct.Default.3:x{[0]: ValueNode<FuncGraph> construct.Conv2d.4, [1]: x}
+#   2: @✗construct.Default.3:[CNode]21{[0]: ValueNode<Primitive> Return, [1]: x}
+
+
+subgraph attr:
+subgraph instance: construct.Conv2d.4 : 0x11cc7ab0
+# In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:311/    def construct(self, x):/
+subgraph @construct.Conv2d.4 parent: [subgraph @construct.Default_wrapper.1](%para270_x) {
+  %1([CNode]22) = call @bool_.8(Bool(0))
+      :(<Bool, NoShape>) -> (<Bool, NoShape>)
+      #scope: (Default/conv1-Conv2d)
+      # In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:313/        if self.has_bias:/
+  %2([CNode]23) = Primitive::Switch{prim_type=1}(%1, call @✓construct.Conv2d.24, call @✗construct.Conv2d.5)
+      :(<Bool, NoShape>, <Func, NoShape>, <Func, NoShape>) -> (<Func, NoShape>)
+      #scope: (Default/conv1-Conv2d)
+      # In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:313/        if self.has_bias:/
+
+#------------------------> 3
+  %3([CNode]25) = %2()
+      #scope: (Default/conv1-Conv2d)
+      # In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:313/        if self.has_bias:/
+  %4([CNode]27) = call @↓construct.Conv2d.26(%3)
+      :(<null>) -> (<null>)
+      #scope: (Default)
+      # In file /home/zhanghao/Downloads/mycode/res-net/src/resnet.py:482/            x = self.conv1(x)/
+  Primitive::Return{prim_type=1}(%4)
+      :(<null>)
+      #scope: (Default/conv1-Conv2d)
+      # In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:313/        if self.has_bias:/
+}
+# order:
+#   1: @construct.Conv2d.4:output{[0]: ValueNode<DoSignaturePrimitive> S-Prim-Conv2D, [1]: x, [2]: conv1.weight}
+#   2: @construct.Conv2d.4:[CNode]22{[0]: ValueNode<FuncGraph> bool_.8, [1]: ValueNode<BoolImm> false}
+#   3: @construct.Conv2d.4:[CNode]23{[0]: ValueNode<Primitive> Switch, [1]: [CNode]22, [2]: ValueNode<FuncGraph> ✓construct.Conv2d.24, [3]: ValueNode<FuncGraph> ✗construct.Conv2d.5}
+#   4: @construct.Conv2d.4:[CNode]25{[0]: [CNode]23}
+#   5: @construct.Conv2d.4:[CNode]27{[0]: ValueNode<FuncGraph> ↓construct.Conv2d.26, [1]: [CNode]25}
+#   6: @construct.Conv2d.4:[CNode]28{[0]: ValueNode<Primitive> Return, [1]: [CNode]27}
+
+
+subgraph attr:
+subgraph instance: ✗construct.Conv2d.5 : 0x11ca8120
+# In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:313/        if self.has_bias:/
+subgraph @✗construct.Conv2d.5 parent: [subgraph @construct.Conv2d.4]() {
+
+#------------------------> 4
+  %1(output) = $(construct.Conv2d.4):DoSignaturePrimitive::S-Prim-Conv2D{prim_type=1}[kernel_size=(I64(7), I64(7)), stride=(I64(1), I64(1), I64(2), I64(2)), mode=I64(1), out_channel=I64(64), group=I64(1), input_names=["x", "w"], pad=(I64(0), I64(0), I64(0), I64(0)), dilation=(I64(1), I64(1), I64(1), I64(1)), pad_mode=I64(1), output_names=["output"], format="NCHW", groups=I64(1)](%para270_x, %para2_conv1.weight)
+      :(<Tensor[Float32], (1, 28, 28)>, <Ref[Tensor(F32)], (64, 3, 7, 7)>) -> (<null>)
+      #scope: (Default/conv1-Conv2d)
+      # In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:312/        output = self.conv2d(x, self.weight)/
+  Primitive::Return{prim_type=1}(%1)
+      :(<null>)
+      #scope: (Default/conv1-Conv2d)
+      # In file /home/zhanghao/anaconda3/envs/mindspore2.0.0_alpha/lib/python3.9/site-packages/mindspore/nn/layer/conv.py:313/        if self.has_bias:/
+}
+# order:
+#   1: @✗construct.Conv2d.5:[CNode]29{[0]: ValueNode<Primitive> Return, [1]: output}
+
+
+#===============================================================================
+# num of function graphs in stack: 5/6 (Ignored 1 internal frames).
